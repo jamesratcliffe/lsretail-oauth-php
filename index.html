@@ -4,22 +4,23 @@
 	<title>Lightspeed Retail OAuth Connector</title>
 </head>
 <body>
-	<h1>Connect an OAuth Client to a Retail account</h1>
+	<h1>Generating an Authorization Endpoint URL</h1>
 	<form action="build-link.php" method="post">
 		<!-- <div>
 			<label for="client_id">Client ID</label>
 			<input type="text" name="client_id" />
 		</div> -->
-		<!-- <div>
+		<div>
 			<label for="scope">Scope</label>
 			<input type="" name="scope" />
-		</div> -->
-		<div>
-			
 		</div>
 		<div class="button">
-			<button type="submit">Link Client</button>
+			<button type="submit" name="button" value="generate">Generate URL</button>
+		</div>
+		<div class="button">
+			<button type="submit" name="button" value="link">Link Client</button>
 		</div>
 	</form>
+	<p>For more more information, see the <a href="http://developers.lightspeedhq.com/retail/introduction/authentication/">API Documentation</a></p>
 </body>
 </html>

@@ -1,10 +1,28 @@
 <?php
 
-// var_dump($_POST);
-// $clientID = $_POST['client_id'];
 $clientID = 'jamesratcliffetest';
 $scope = $_POST['scope'];
 $authURL = "https://cloud.merchantos.com/oauth/authorize.php?response_type=code&client_id={$clientID}&scope={$scope}";
 
-// echo $authurl;
-header("location: {$authURL}");
+if ($_POST['button'] == 'generate'):
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lightspeed Retail OAuth Connector</title>
+</head>
+<body>
+	<h1>Authorization Endpoint URL Generated</h1>
+	<p><a href="<?= $authURL; ?>"><?= $authURL; ?></a></p>
+</body>
+</html>
+
+<?php
+
+elseif ($_POST['button'] == 'link'):
+	header("location: {$authURL}");
+endif;
+
+?>
