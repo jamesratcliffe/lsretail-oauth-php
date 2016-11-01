@@ -21,3 +21,6 @@ return [
 
 On the main page (index.html) you can select the scope you want to request. Clicking "Generate URL" will just show the URL; clicking "Link Client" generate the URL and open it.
 
+## Accepting the Temp Token
+
+If you point your redirect URI to temp-token.php, it will use it to request an OAuth access token and display the reponse.
