@@ -7,8 +7,7 @@ $postFields = [
     'client_id' => $config['clientID'],
     'client_secret' => $config['clientSecret'],
     'code' => $tempToken,
-    'grant_type' => 'authorization_code',
-    'redirect_uri' => $config['redirectURI']
+    'grant_type' => 'authorization_code'
 ];
 
 $curl = curl_init();
