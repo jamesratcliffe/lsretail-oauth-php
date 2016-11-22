@@ -4,7 +4,7 @@ This is a very basic PHP web application that will generate an authorization end
 
 ## Configuration
 
-Your OAuth Client's client ID, client secret and redirect URI are stored in the file config.php as an associative array.
+Your OAuth Client's client ID, client secret and redirect URI are stored in the file config.php as an associative array. This file needs to be created following this example:
 
 ```php
 <?php
