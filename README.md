@@ -25,4 +25,4 @@ On the main page (index.html) you can select the scope you want to request. Clic
 
 ## Accepting the Temp Token
 
-If you point your redirect URI to temp-token.php, it will use it to request an OAuth access token and display the reponse.
+If you point your OAuth client's redirect URI to temp-token.php, it will use it to request an OAuth access token and display the reponse.
