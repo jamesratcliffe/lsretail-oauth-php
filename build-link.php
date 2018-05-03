@@ -3,7 +3,7 @@
 $config = require 'config.php';
 $client_id = $config['clientID'];
 $scope = $_POST['scope'];
-$authURL = "https://cloud.merchantos.com/oauth/authorize.php?response_type=code&client_id={$client_id}&scope={$scope}";
+$authURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$client_id}&scope={$scope}";
 
 if ($_POST['button'] == 'generate'):
 

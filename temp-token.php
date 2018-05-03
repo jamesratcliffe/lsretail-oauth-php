@@ -1,7 +1,7 @@
 <?php
 
 $config = require 'config.php';
-$tokenURL = "https://cloud.merchantos.com/oauth/access_token.php";
+$tokenURL = "https://cloud.lightspeedapp.com/oauth/access_token.php";
 $tempToken = $_GET['code'];
 $postFields = [
     'client_id' => $config['clientID'],
